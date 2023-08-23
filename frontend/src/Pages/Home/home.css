@@ -1,0 +1,24 @@
+.video-page{
+    background-color: var(--color-primary);
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.8rem;
+    padding: 0.5rem 0 3rem 0;
+}
+
+h1{
+    margin: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .video-page{
+        padding: 6rem 3rem 1rem 3rem;
+        min-height: 100vh;
+        margin-bottom: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

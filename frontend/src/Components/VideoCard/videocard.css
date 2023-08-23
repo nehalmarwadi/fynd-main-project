@@ -1,0 +1,42 @@
+.card{
+    background-color: var(--color-gray);
+    margin: 0.5rem 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.player{
+    width: 100% !important;
+    height: 203px !important;
+    margin: 0;
+    /* background-image: url("https://cdn.pixabay.com/photo/2016/04/19/01/00/chalkboard-1337809_960_720.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    color: var(--color-text);
+}
+
+.card-primary-text {
+    font-size: 1.5rem;
+    margin: 0 !important;
+}
+
+.card-secondary-text {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 768px){
+
+    .card{
+        background-color: var(--color-gray);
+        width: 30%;
+        margin: 0.5rem 1rem;
+    }
+}

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.8rem;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.header h1{
+    font-family: 'Comfortaa', cursive;
+    text-transform: lowercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.it{
+    color: var(--color-secondary);
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.avtaar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+    margin-left: 2rem !important;
+    cursor: pointer;
+}
+
+.sm {
+    height: 3rem;
+    width: 3rem;
+}
+
+.nav-links{
+    display: none;
+}
+
+.bottom-nav-links{
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background-color: var(--color-primary);
+}
+
+.bottom-nav-links ul{
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-nav-links ul li{
+    margin: 0.5rem 1rem 0 0;
+}
+
+.icon{
+    width: 2rem;
+    height: auto;
+    color: var(--color-text);
+}
+
+.active > .icon {
+    color: var(--color-secondary);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.link:hover{
+    color: var(--color-secondary);
+}
+
+.active-nav{
+    color: var(--color-secondary);
+}
+
+.profile-img{
+    position: relative;
+}
+
+.open-modal{
+    display: none;
+}
+.profile-modal{
+    display: block;
+    position: fixed;
+    color: var(--color-primary);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 4.8rem;
+    padding-left: 7rem;
+    background-color: rgba(131, 125, 125, 0.4);
+}
+
+.profile-content{
+    width: 15rem;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border-radius: 0.25rem;
+}
+
+.profile-header{
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-desc{
+    margin: 0.5rem 1.5rem;
+}
+
+.profile-field{
+    font-size: 0.75rem;
+    color: var(--color-lightGray);
+}
+
+.profile-data{
+    margin: 0 00.5rem;
+    font-weight: 600;
+}
+
+.logout-btn{
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    outline: none;
+    border: 1px solid var(--color-secondary);
+    border-radius: 00.5rem;
+    margin: 1rem 0.25rem;
+    padding: 00.25rem 1rem;
+    cursor: pointer;
+}
+
+.logout-icon{
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.login-content{
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 768px){
+
+    nav{
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .header{
+        margin: 0.5rem 5rem 0.2rem 5rem;
+    }
+
+    .header h1{
+        font-size: 3rem;
+    }
+
+    .nav-bar{
+        margin: 0.5rem 5rem 0.2rem 5rem;
+    }
+
+    .nav-links{
+        display: block;
+    }
+
+    .nav-links ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .nav-links ul li{
+        margin: 0 1rem;
+    }
+
+    .bottom-nav-links{
+        display: none;
+    }
+
+    .profile-modal{
+        padding-left: 60rem;
+    }
+}

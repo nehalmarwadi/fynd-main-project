@@ -1,0 +1,55 @@
+.playlist-page{
+    background-color: var(--color-primary);
+    min-height: 40rem;
+    padding: 0.5rem 0 3rem 0;
+}
+
+.container{
+    color: var(--color-text);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+}
+
+.trash-icon{
+    width: 1.5rem;
+    height: auto;
+    vertical-align: middle;
+    margin: 0 3.5rem;
+    cursor: pointer;
+}
+
+.playlist-name{
+    margin: 0 !important;
+    color: var(--color-text);
+    vertical-align: middle;
+}
+
+.playlist{
+    margin-bottom: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-videos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .playlist-page{
+        padding: 6rem 3rem 1rem 3rem;
+        margin-bottom: 0;
+        min-height: 100vh;
+    }
+
+    .playlist-videos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

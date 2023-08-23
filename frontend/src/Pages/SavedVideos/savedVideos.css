@@ -1,0 +1,27 @@
+.watch-page{
+    background-color: var(--color-primary);
+    min-height: 40rem;
+    padding: 0.5rem 0 3rem 0;
+}
+
+.watch-card{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .watch-page{
+        min-height: 100vh;
+    }
+
+    .watch-card{
+        padding: 6rem 3rem 1rem 3rem;
+        margin-bottom: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
